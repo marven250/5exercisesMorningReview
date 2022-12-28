@@ -64,4 +64,12 @@ document.addEventListener("DOMContentLoaded", function () {
     const currentDown = parseInt(window.getComputedStyle(craneImage).top);
     craneImage.style.top = `${currentDown + 10}px`;
   });
+  // Dice
+  const diceNumber = document.querySelector("#diceNumber");
+  const diceButton = document.querySelector("#rollDice");
+  const diceOutput = document.querySelector("#diceOutput");
+  diceButton.addEventListener("click", function () {
+    const randomNumber = Math.floor(Math.random() * diceNumber.value) + 1;
+    diceOutput.textContent = randomNumber;
+  });
 });

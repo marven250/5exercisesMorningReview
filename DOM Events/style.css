@@ -55,3 +55,22 @@ section:nth-child(1) {
   height: 40%;
   object-fit: contain;
 }
+
+/* Dice */
+#diceButtonBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+#rollDice {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #000;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
