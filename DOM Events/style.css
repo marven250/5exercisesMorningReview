@@ -22,6 +22,7 @@ section {
   margin: 2rem 0;
   padding: 2rem;
   border-top: 1px solid #000;
+  gap: 2rem;
 }
 
 section:nth-child(1) {

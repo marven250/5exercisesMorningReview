@@ -23,4 +23,14 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log(currentFontSize);
     text.style.fontSize = `${currentFontSize}px`;
   });
+
+  //Change background color
+  const body = document.querySelector("body");
+  const colorPicker = document.querySelector("#greenScreenColor");
+  const colorPickerButton = document.querySelector("#greenScreenButton");
+  colorPickerButton.addEventListener("click", function () {
+    //make case insensitive
+    colorPicker.value = colorPicker.value.toLowerCase();
+    body.style.backgroundColor = colorPicker.value;
+  });
 });
