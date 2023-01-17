@@ -12,7 +12,7 @@ body {
   height: 100vh;
   background-color: #f5f5f5;
 }
-/* cookie clikcer */
+/* EXERCISE 1: Cookie Clicker */
 section {
   display: flex;
   flex-direction: column;
@@ -29,19 +29,24 @@ section:nth-child(1) {
   border-top: none;
 }
 
+/* Remove the border if you don't want #cookie to look like a button, or just
+style the button. If you used <div> or <h1> for #cookie, you will notice your 
+text being highlighted after a certain number of clicks. You can add 
+user-select: none; to your css to stop the text from highlighting. */
 #cookie {
   font-size: 3.5rem;
+  border: none;
 }
 #cookie:hover {
   cursor: pointer;
 }
 
-/* magnify text */
+/* EXERCISE 2: Magnify Text */
 #text {
   font-size: 10px;
 }
 
-/* crane game */
+/* EXTENSION: Crane Game */
 #craneBox {
   display: flex;
   align-items: center;
@@ -56,7 +61,7 @@ section:nth-child(1) {
   object-fit: contain;
 }
 
-/* Dice */
+/* EXTENSION: Dice */
 #diceButtonBox {
   display: flex;
   flex-direction: column;
